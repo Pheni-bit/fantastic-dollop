@@ -1,0 +1,37 @@
+<script>
+
+function toggleRow(el) {
+    //var arrow = el.getElementsByTagName("i")[0];
+    //var hiddenRows = el.parentNode.nextElementSibling.parentNode;
+    var parentRef = el.parentElement;
+    var tableRef = document.getElementById('myTable');
+    var tableRows = tableRef.rows;
+    var atIndex = false;
+    var childArrow = el.getElementsByTagName("i")[0];
+    
+    for (var x = 0; x < tableRows.length; x++)
+      {
+        if (atIndex){
+          if (tableRef.rows[x].id === 'hidden-row'){
+            if (tableRef.rows[x].style.display === "table-row" ){
+              tableRef.rows[x].style.display = "none";
+              childArrow.classList.remove("fa-arrow-down");
+              childArrow.classList.add("fa-arrow-right");
+            }
+            else {
+              tableRef.rows[x].style.display = "table-row";
+              childArrow.classList.remove("fa-arrow-right");
+              childArrow.classList.add("fa-arrow-down");
+            }
+          }
+          else 
+            break;
+        }
+        else {
+          if (tableRef.rows[x].id === parentRef.id)
+            atIndex = true;  
+        }  
+      }
+  }
+  
+  </script>
