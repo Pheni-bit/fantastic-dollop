@@ -36,9 +36,11 @@
     display: none;
   }
 
+  .hidden-event {
+    pointer-events: none;
+  }
 
 </style>
-
 
 <header><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </header>
@@ -53,7 +55,7 @@
     <th>Total Care</th>
   </tr>
   <tr>
-    <td class="toggle">Qualified Resources<i class="fa fa-arrow-right" id="arrow1"></i></td>
+    <td class="toggle">Qualified Resources<i class="fa fa-arrow-right hidden-event" id="arrow1"></i></td>
     <td><i class="fa fa-check"></i></td>
     <td><i class="fa fa-check"></i></td>
     <td><i class="fa fa-check"></i></td>
@@ -89,7 +91,7 @@
     <td><i class="fa fa-check"></i></td>
   </tr>
   <tr>
-    <td class="toggle">Office 365 Migration Services<i class="fa fa-arrow-right" id="arrow2"></i></td>
+    <td class="toggle">Office 365 Migration Services<i class="fa fa-arrow-right hidden-event" id="arrow2"></i></td>
     <td><i class="fa fa-check"></i></td>
     <td><i class="fa fa-check"></i></td>
     <td><i class="fa fa-check"></i></td>
