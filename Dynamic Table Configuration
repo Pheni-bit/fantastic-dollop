@@ -116,8 +116,6 @@ td:first-child {
 <script>
 
 function toggleRow(el) {
-    //var arrow = el.getElementsByTagName("i")[0];
-    //var hiddenRows = el.parentNode.nextElementSibling.parentNode;
     var parentRef = el.parentElement;
     var tableRef = document.getElementById('myTable');
     var tableRows = tableRef.rows;
