@@ -122,42 +122,43 @@
 </table>
 <script>
 
-var allToggleClasses = [...document.getElementsByClassName("toggle")];
+    var allToggleClasses = [...document.getElementsByClassName("toggle")];
     for (var v = 0; v < allToggleClasses.length; v++) {
-    allToggleClasses[v].addEventListener('click', toggleRow);
+        allToggleClasses[v].addEventListener('click', toggleRow);
     }
     var tableRef = document.getElementById('myTable');
 
     function toggleRow(el) {
       
-    var parentRef = el.target.parentElement;
-    var tableRows = tableRef.rows;
-    var atIndex = false;
-    var childArrow = el.target.getElementsByTagName("i")[0];
+        var parentRef = el.target.parentElement;
+        var tableRows = tableRef.rows;
+        var atIndex = false;
+        var childArrow = el.target.getElementsByTagName("i")[0];
     
-    for (var x = 0; x < tableRows.length; x++) {
-        if (atIndex){
-          if (tableRef.rows[x].classList.contains('hidden-row')) {
-              tableRef.rows[x].classList.contains('hide-row') ? 
-                (
-                tableRef.rows[x].classList.remove("hide-row"),
-                console.log(tableRef.rows[x] + tableRef.rows[x].classList[0]),
-                childArrow.classList.remove("fa-arrow-right"),
-                childArrow.classList.add("fa-arrow-down")
-                )
-              : (
-                tableRef.rows[x].classList.add("hide-row"),
-                childArrow.classList.remove("fa-arrow-down"),
-                childArrow.classList.add("fa-arrow-right")
-                )
+        for (var x = 0; x < tableRows.length; x++) {
+            if (atIndex){
+                if (tableRef.rows[x].classList.contains('hidden-row')) {
+                    tableRef.rows[x].classList.contains('hide-row') ? 
+                    (
+                        tableRef.rows[x].classList.remove("hide-row"),
+                        console.log(tableRef.rows[x] + tableRef.rows[x].classList[0]),
+                        childArrow.classList.remove("fa-arrow-right"),
+                        childArrow.classList.add("fa-arrow-down")
+                    )
+                    : 
+                    (
+                        tableRef.rows[x].classList.add("hide-row"),
+                        childArrow.classList.remove("fa-arrow-down"),
+                        childArrow.classList.add("fa-arrow-right")
+                    )
+                }
+                else 
+                    break;
            }
-           else 
-            break;
-        }
-        else {
-          if (tableRef.rows[x] === parentRef)
-            atIndex = true;  
-        }  
+           else {
+              if (tableRef.rows[x] === parentRef)
+                  atIndex = true;  
+           }  
       }
   }
   </script>
