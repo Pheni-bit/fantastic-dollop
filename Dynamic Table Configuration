@@ -55,7 +55,7 @@
     <th>Total Care</th>
   </tr>
   <tr>
-    <td class="toggle">Qualified Resources<i class="fa fa-arrow-right hidden-event" id="arrow1"></i></td>
+    <td class="toggle">Qualified Resources<i class="fa fa-arrow-down hidden-event" id="arrow1"></i></td>
     <td><i class="fa fa-check"></i></td>
     <td><i class="fa fa-check"></i></td>
     <td><i class="fa fa-check"></i></td>
@@ -63,7 +63,7 @@
     <td><i class="fa fa-check"></i></td>
     <td><i class="fa fa-check"></i></td>
   </tr>
-  <tr class="hidden-row hide-row">
+  <tr class="hidden-row">
     <td>Dedicated System Engineering Team</td>
     <td><i class="fa fa-check"></i></td>
     <td><i class="fa fa-check"></i></td>
@@ -72,7 +72,7 @@
     <td><i class="fa fa-check"></i></td>
     <td><i class="fa fa-check"></i></td>
   </tr>
-  <tr class="hidden-row hide-row">
+  <tr class="hidden-row">
     <td>Certified Across Various Platforms</td>
     <td><i class="fa fa-check"></i></td>
     <td><i class="fa fa-check"></i></td>
@@ -81,7 +81,7 @@
     <td><i class="fa fa-check"></i></td>
     <td><i class="fa fa-check"></i></td>
   </tr>
-  <tr class="hidden-row hide-row">
+  <tr class="hidden-row">
     <td><span class="table-bullet">•</span> Project Management</td>
     <td><i class="fa fa-check"></i></td>
     <td><i class="fa fa-check"></i></td>
