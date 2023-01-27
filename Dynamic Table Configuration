@@ -126,10 +126,10 @@
     for (var v = 0; v < allToggleClasses.length; v++) {
         allToggleClasses[v].addEventListener('click', toggleRow);
     }
-    var tableRef = document.getElementById('myTable');
-
+    
+    
     function toggleRow(el) {
-      
+        var tableRef = el.target.closest("table");
         var parentRef = el.target.parentElement;
         var tableRows = tableRef.rows;
         var atIndex = false;
