@@ -1,3 +1,118 @@
+<html>
+
+<style>
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+th {
+  padding: 20px 8px;
+  text-align: center;
+  color: #ffffff;
+  background-color: yellow;
+}
+tr:first-child th:nth-child(even) {
+    background-color: orange;
+}
+th:first-child {
+  background-color: red;
+}
+
+td {
+  padding: 6px;
+  border-right: 1px solid black;
+  text-align: center;
+  width:12.5%;
+}
+td:first-child {
+  width:25%;
+  text-align:left;
+}
+.hidden-row td:first-child {
+  padding-left:30px;
+}
+
+</style>
+
+
+<header><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</header>
+<table id="myTable">
+  <tr>
+    <th>Managed Services</th>
+    <th>Custom Services</th>
+    <th>Office 365 Migration</th>
+    <th>Total Security</th>
+    <th>Total Backup</th>
+    <th>HTotal Cloud</th>
+    <th>Total Care</th>
+  </tr>
+  <tr id='test0'>
+    <td class="toggle" onclick="toggleRow(this)">Qualified Resources<i class="fa fa-arrow-right" id="arrow1"></i></td>
+    <td><i class="fa fa-check"></i></td>
+    <td><i class="fa fa-check"></i></td>
+    <td><i class="fa fa-check"></i></td>
+    <td><i class="fa fa-check"></i></td>
+    <td><i class="fa fa-check"></i></td>
+    <td><i class="fa fa-check"></i></td>
+  </tr>
+  <tr class="hidden-row" id="hidden-row" style="display:none;">
+    <td>Dedicated System Engineering Team</td>
+    <td><i class="fa fa-check"></i></td>
+    <td><i class="fa fa-check"></i></td>
+    <td><i class="fa fa-check"></i></td>
+    <td><i class="fa fa-check"></i></td>
+    <td><i class="fa fa-check"></i></td>
+    <td><i class="fa fa-check"></i></td>
+  </tr>
+  <tr class="hidden-row" id="hidden-row" style="display:none;">
+    <td>Certified Across Various Platforms</td>
+    <td><i class="fa fa-check"></i></td>
+    <td><i class="fa fa-check"></i></td>
+    <td><i class="fa fa-check"></i></td>
+    <td><i class="fa fa-check"></i></td>
+    <td><i class="fa fa-check"></i></td>
+    <td><i class="fa fa-check"></i></td>
+  </tr>
+  <tr class="hidden-row" id="hidden-row" style="display:none;">
+    <td><span class="table-bullet">•</span> Project Management</td>
+    <td><i class="fa fa-check"></i></td>
+    <td><i class="fa fa-check"></i></td>
+    <td><i class="fa fa-check"></i></td>
+    <td><i class="fa fa-check"></i></td>
+    <td><i class="fa fa-check"></i></td>
+    <td><i class="fa fa-check"></i></td>
+  </tr>
+  <tr id ='test'>
+    <td class="toggle" onclick="toggleRow(this)">Office 365 Migration Services<i class="fa fa-arrow-right" id="arrow2"></i></td>
+    <td><i class="fa fa-check"></i></td>
+    <td><i class="fa fa-check"></i></td>
+    <td><i class="fa fa-check"></i></td>
+    <td><i class="fa fa-check"></i></td>
+    <td><i class="fa fa-check"></i></td>
+    <td><i class="fa fa-check"></i></td>
+  </tr>
+  <tr class="hidden-row" id="hidden-row" style="display:none;">
+    <td>Additional Info 3-1</td>
+    <td>Additional Info 3-2</td>
+    <td>Additional Info 3-3</td>
+  </tr>
+  <tr class="hidden-row" id="hidden-row" style="display:none;">
+    <td>Additional Info 4-1</td>
+    <td>Additional Info 4-2</td>
+    <td>Additional Info 4-3</td>
+  </tr>
+  <tr class="hidden-row" id="hidden-row" style="display:none;">
+    <td>Additional Info 5-1</td>
+    <td>Additional Info 5-2</td>
+    <td>Additional Info 5-3</td>
+  </tr>
+  <tr class="hidden-row" id="hidden-row" style="display:none;">
+    <td>Additional Info 6-1</td>
+    <td>Additional Info 6-2</td>
+    <td>Additional Info 6-3</td>
+  </tr>
+</table>
 <script>
 
 function toggleRow(el) {
@@ -35,3 +150,4 @@ function toggleRow(el) {
   }
   
   </script>
+</html>
