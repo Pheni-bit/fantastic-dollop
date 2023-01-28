@@ -157,8 +157,8 @@
               if (tableRef.rows[x] === parentRef)
                   atIndex = true;  
            }  
-       }
-   }
+        }
+    }
   
   </script>
 </html>
